@@ -37,7 +37,11 @@ export default {
         },
         async clearAll() {
             db.backLogTasks.clear();
+            db.inProgressTasks.clear();
+            db.testingTasks.clear();
+            db.completedTasks.clear();
             this.taskDescription = '';
+            console.log("All tasks cleared");
         }
     },
 }
