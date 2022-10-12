@@ -1,7 +1,7 @@
 import Dexie from "dexie";
 
 export const db = new Dexie('myDatabase');
-db.version(4).stores({
+db.version(5).stores({
   backLogTasks: '++id, description',
   inProgressTasks: '++id, description',
   testingTasks: '++id, description',
